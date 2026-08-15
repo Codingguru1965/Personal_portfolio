@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import { FaCode, FaDraftingCompass, FaServer, FaLayerGroup, FaMobileAlt, FaDatabase } from 'react-icons/fa';
-
+import profile from '/public/remove_image.png'
 const capabilities = [
   { icon: <FaCode />, name: 'Frontend Engineering' },
   { icon: <FaServer />, name: 'Backend Architecture' },
@@ -31,7 +31,7 @@ const About = () => {
                   style={{ position: 'relative', overflow: 'hidden' }}
                 >
                   <img
-                    src="../public/remove_image.png"
+                    src={profile}
                     alt="Ankit Yadav"
                     style={{
                       width: '100%',

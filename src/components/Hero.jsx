@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { FaDownload, FaArrowRight } from 'react-icons/fa';
-
+import resume from '/public/tech_resume.pdf'
 const Hero = () => {
   const triggerResumeConfetti = () => {
     confetti({
@@ -59,7 +59,7 @@ const Hero = () => {
 
               <div className="d-flex flex-wrap gap-3">
                 <a
-                  href="../public/tech_resume.pdf"
+                  href={resume}
                   download="Ankit_Yadav_Resume.pdf"
                   onClick={triggerResumeConfetti}
                   className="btn-gold text-decoration-none"
