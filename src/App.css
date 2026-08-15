@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --bg-primary: #002b31;
+  --bg-darker: #00181c;
+  --bg-card: rgba(0, 43, 49, 0.65);
+  --accent-gold: #f5deb3;
+  --accent-gold-glow: rgba(245, 222, 179, 0.35);
+  --text-pure: #ffffff;
+  --text-muted: #94a3b8;
+  --border-glass: rgba(245, 222, 179, 0.15);
+  --glass-blur: blur(16px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(245, 222, 179, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(0, 70, 80, 0.4) 0%, transparent 50%);
+  color: var(--text-pure);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-darker);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-gold);
+  border-radius: 4px;
+}
+
+/* Floating Glass Navbar */
+.glass-nav {
+  background: rgba(0, 27, 31, 0.75) !important;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--border-glass);
+  transition: all 0.3s ease;
+}
+
+.nav-link-glow {
+  color: var(--accent-gold) !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link-glow::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-link-glow:hover::after {
+  width: 70%;
+}
+
+.nav-link-glow:hover {
+  color: #fff !important;
+  text-shadow: 0 0 10px var(--accent-gold-glow);
+}
+
+/* Glass Cards with Tilt */
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--accent-gold);
+  box-shadow: 0 15px 35px var(--accent-gold-glow);
+}
+
+/* Interactive Buttons */
+.btn-gold {
+  background: var(--accent-gold);
+  color: var(--bg-darker);
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 14px 28px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px var(--accent-gold-glow);
+}
+
+.btn-gold:hover {
+  background: #ffffff;
+  color: var(--bg-darker);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+}
+
+/* Tag Pills */
+.feature-badge {
+  background: rgba(245, 222, 179, 0.1);
+  border: 1px solid var(--border-glass);
+  color: var(--accent-gold);
+  padding: 8px 16px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.feature-badge:hover {
+  background: var(--accent-gold);
+  color: var(--bg-darker);
+  transform: translateY(-2px);
+}
+
+/* Custom Input Controls */
+.modern-input {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid var(--border-glass) !important;
+  color: #fff !important;
+  border-radius: 12px !important;
+  padding: 14px 18px !important;
+  transition: all 0.3s ease !important;
+}
+
+.modern-input::placeholder {
+  color: var(--text-muted) !important;
+}
+
+.modern-input:focus {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: var(--accent-gold) !important;
+  box-shadow: 0 0 15px var(--accent-gold-glow) !important;
+}
+.link_section:hover{
+    color: #f5deb3 !important;
+}
