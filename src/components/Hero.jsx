@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { FaDownload, FaArrowRight } from 'react-icons/fa';
-import resume from '/public/tech_resume.pdf'
+import resume from '/public/modern_resume.pdf'
 const Hero = () => {
   const triggerResumeConfetti = () => {
     confetti({
