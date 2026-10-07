@@ -452,6 +452,27 @@ section {
   font-weight: 600;
   color: var(--primary-blue);
   margin-bottom: 20px;
+  min-height: 2.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.typewriter-text {
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+
+.typewriter-cursor,
+.Typewriter__cursor {
+  color: var(--primary-blue);
+  font-weight: 300;
+  margin-left: 2px;
+  animation: typewriter-blink 1s infinite;
+}
+
+@keyframes typewriter-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .hero-description {

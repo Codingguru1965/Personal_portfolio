@@ -10,6 +10,7 @@ import {
   FaExclamationCircle,
   FaSpinner
 } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
@@ -115,17 +116,29 @@ const Contact = () => {
   return (
     <section id="contact">
       <Container>
-        <div className="section-header text-center">
+        <motion.div
+          className="section-header text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
           <span className="section-tag">Get In Touch</span>
           <h2 className="section-heading">Contact Me</h2>
           <p className="section-desc">
             Have a question or want to discuss opportunities? Send a message below.
           </p>
-        </div>
+        </motion.div>
 
         <Row className="g-4 justify-content-center">
           <Col lg={5}>
-            <div className="clean-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+            <motion.div
+              className="clean-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+            >
               <div>
                 <h3 style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '12px' }}>
                   Let's Connect
@@ -240,11 +253,17 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </Col>
 
           <Col lg={7}>
-            <div className="clean-card p-4 p-md-5 h-100">
+            <motion.div
+              className="clean-card p-4 p-md-5 h-100"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+            >
               {status.success === true && (
                 <div className="alert-custom alert-success-custom" role="alert">
                   <FaCheckCircle size={18} />
@@ -330,7 +349,7 @@ const Contact = () => {
                   )}
                 </button>
               </Form>
-            </div>
+            </motion.div>
           </Col>
         </Row>
       </Container>

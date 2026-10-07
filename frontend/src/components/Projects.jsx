@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { SiNpm } from 'react-icons/si';
 
@@ -100,18 +101,31 @@ const Projects = () => {
   return (
     <section id="projects">
       <Container>
-        <div className="section-header text-center">
+        <motion.div
+          className="section-header text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
           <span className="section-tag">Portfolio</span>
           <h2 className="section-heading">Featured Projects</h2>
           <p className="section-desc">
             Real-world full stack applications, published open-source npm packages, and responsive web platforms.
           </p>
-        </div>
+        </motion.div>
 
         <Row className="g-4 justify-content-center">
           {projects.map((project, idx) => (
             <Col lg={6} md={12} key={idx}>
-              <div className="project-card">
+              <motion.div
+                className="project-card"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.55, delay: idx * 0.12, ease: 'easeOut' }}
+                whileHover={{ translateY: -4 }}
+              >
                 <div className="project-image-box">
                   <img
                     src={project.image}
@@ -161,7 +175,7 @@ const Projects = () => {
                     )}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </Col>
           ))}
         </Row>

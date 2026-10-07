@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaBriefcase, FaMapMarkerAlt, FaCalendarAlt, FaCheckCircle } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import { FaMapMarkerAlt, FaCalendarAlt, FaCheckCircle } from 'react-icons/fa';
 
 const Experience = () => {
   const responsibilities = [
@@ -15,17 +16,29 @@ const Experience = () => {
   return (
     <section id="experience">
       <Container>
-        <div className="section-header text-center">
+        <motion.div
+          className="section-header text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
           <span className="section-tag">Experience</span>
           <h2 className="section-heading">Work Experience</h2>
           <p className="section-desc">
             Hands-on software development training and apprentice experience.
           </p>
-        </div>
+        </motion.div>
 
         <Row className="justify-content-center">
           <Col lg={10}>
-            <div className="timeline-card p-4 p-md-5">
+            <motion.div
+              className="timeline-card p-4 p-md-5"
+              initial={{ opacity: 0, y: 35 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+            >
               <div className="timeline-header">
                 <div>
                   <h3 className="timeline-role">MERN Stack Developer Apprentice</h3>
@@ -54,15 +67,22 @@ const Experience = () => {
 
               <ul className="timeline-list">
                 {responsibilities.map((resp, index) => (
-                  <li key={index} className="d-flex align-items-start gap-2 mb-2">
+                  <motion.li
+                    key={index}
+                    className="d-flex align-items-start gap-2 mb-2"
+                    initial={{ opacity: 0, x: -15 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: index * 0.08, ease: 'easeOut' }}
+                  >
                     <span style={{ color: 'var(--primary-blue)', marginTop: '4px', flexShrink: 0 }}>
                       <FaCheckCircle size={14} />
                     </span>
                     <span>{resp}</span>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           </Col>
         </Row>
       </Container>

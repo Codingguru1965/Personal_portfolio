@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import {
   FaHtml5,
   FaCss3Alt,
@@ -73,33 +74,50 @@ const Skills = () => {
   return (
     <section id="skills">
       <Container>
-        <div className="section-header text-center">
+        <motion.div
+          className="section-header text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
           <span className="section-tag">Skills</span>
           <h2 className="section-heading">Technical Skills & Tools</h2>
           <p className="section-desc">
             Technologies and tools I actively use for building full stack web applications.
           </p>
-        </div>
+        </motion.div>
 
         <Row className="g-4">
           {skillCategories.map((cat, idx) => (
             <Col lg={6} key={idx}>
-              <div className="skill-category-card">
+              <motion.div
+                className="skill-category-card"
+                initial={{ opacity: 0, y: 35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.5, delay: idx * 0.12, ease: 'easeOut' }}
+              >
                 <div className="skill-category-title">
                   <span style={{ fontSize: '1.25rem' }}>{cat.icon}</span>
                   <span>{cat.title}</span>
                 </div>
                 <div className="skill-items-container">
                   {cat.skills.map((skill, sIdx) => (
-                    <div className="skill-tag" key={sIdx}>
+                    <motion.div
+                      className="skill-tag"
+                      key={sIdx}
+                      whileHover={{ scale: 1.06, translateY: -2 }}
+                      transition={{ duration: 0.15 }}
+                    >
                       <span style={{ fontSize: '1.1rem', display: 'flex', alignItems: 'center' }}>
                         {skill.icon}
                       </span>
                       <span>{skill.name}</span>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
-              </div>
+              </motion.div>
             </Col>
           ))}
         </Row>

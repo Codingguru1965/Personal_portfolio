@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import { FaGraduationCap, FaSchool, FaCalendarAlt, FaAward } from 'react-icons/fa';
 
 const educationData = [
@@ -27,18 +28,31 @@ const Education = () => {
   return (
     <section id="education">
       <Container>
-        <div className="section-header text-center">
+        <motion.div
+          className="section-header text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
           <span className="section-tag">Academic Journey</span>
           <h2 className="section-heading">Education</h2>
           <p className="section-desc">
             Academic qualifications and educational background.
           </p>
-        </div>
+        </motion.div>
 
         <Row className="justify-content-center">
           <Col lg={10}>
             {educationData.map((item, index) => (
-              <div className="timeline-card p-4 p-md-5" key={index}>
+              <motion.div
+                className="timeline-card p-4 p-md-5"
+                key={index}
+                initial={{ opacity: 0, y: 35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.55, delay: index * 0.15, ease: 'easeOut' }}
+              >
                 <div className="timeline-header">
                   <div>
                     <h3 className="timeline-role d-flex align-items-center gap-2">
@@ -74,7 +88,7 @@ const Education = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </Col>
         </Row>
