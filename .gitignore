@@ -30,6 +30,7 @@ dist-ssr
 backend/.env
 !.env.example
 !backend/.env.example
+!frontend/.env.production
 
 # Node modules & build artifacts
 node_modules/

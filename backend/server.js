@@ -19,7 +19,8 @@ const allowedOrigins = [
   'http://localhost:5173',
   'http://127.0.0.1:5173',
   'http://localhost:3000',
-  'http://127.0.0.1:3000'
+  'http://127.0.0.1:3000',
+  'https://codingguru1965.github.io'
 ];
 
 if (process.env.CLIENT_URL) {
