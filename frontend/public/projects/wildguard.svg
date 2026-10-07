@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wgBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+    <linearGradient id="wgCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#065F46"/>
+      <stop offset="100%" stop-color="#044E39"/>
+    </linearGradient>
+    <linearGradient id="wgEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#wgBg)"/>
+
+  <!-- Browser Header Bar -->
+  <rect x="40" y="30" width="720" height="38" rx="8" fill="#043D2F"/>
+  <circle cx="65" cy="49" r="6" fill="#EF4444"/>
+  <circle cx="85" cy="49" r="6" fill="#F59E0B"/>
+  <circle cx="105" cy="49" r="6" fill="#10B981"/>
+  <rect x="135" y="40" width="340" height="18" rx="4" fill="#065F46"/>
+  <text x="145" y="53" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11">https://ankit-wildguard.netlify.app/</text>
+
+  <!-- App Main Content Area -->
+  <rect x="40" y="68" width="720" height="352" rx="4" fill="#022C22"/>
+
+  <!-- App Header / Navbar -->
+  <rect x="40" y="68" width="720" height="50" fill="#033A2D"/>
+  <text x="65" y="98" fill="#10B981" font-size="20">🌿</text>
+  <text x="95" y="98" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700" font-size="16">WildGuard</text>
+  <text x="185" y="98" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="11" font-weight="600">CONSERVATION</text>
+  
+  <text x="440" y="97" fill="#D1FAE5" font-family="system-ui, sans-serif" font-size="12">Our Mission</text>
+  <text x="530" y="97" fill="#D1FAE5" font-family="system-ui, sans-serif" font-size="12">Spotlights</text>
+  <text x="610" y="97" fill="#D1FAE5" font-family="system-ui, sans-serif" font-size="12">Projects</text>
+  <rect x="675" y="79" width="70" height="28" rx="6" fill="url(#wgEmerald)"/>
+  <text x="689" y="97" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Action</text>
+
+  <!-- Hero Banner inside app -->
+  <rect x="65" y="135" width="670" height="110" rx="10" fill="#064E3B" stroke="#059669" stroke-width="1"/>
+  <text x="90" y="172" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">PROTECT WILDLIFE • PRESERVE NATURE</text>
+  <text x="90" y="202" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Defending Earth's Endangered Species</text>
+  <text x="90" y="226" fill="#D1FAE5" font-family="system-ui, sans-serif" font-size="12">Empowering local communities and global conservation initiatives.</text>
+
+  <!-- Stats Grid -->
+  <!-- Stat 1 -->
+  <g transform="translate(65, 265)">
+    <rect width="210" height="130" rx="10" fill="url(#wgCard)" stroke="#059669" stroke-width="1"/>
+    <text x="20" y="45" fill="#34D399" font-family="system-ui, sans-serif" font-size="30" font-weight="800">4,500+</text>
+    <text x="20" y="72" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Protected Habitats</text>
+    <text x="20" y="92" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11">Active reserve sanctuaries</text>
+    <rect x="20" y="105" width="80" height="14" rx="3" fill="#047857"/>
+    <text x="26" y="115" fill="#E6FFFA" font-family="system-ui, sans-serif" font-size="9">Global Reach</text>
+  </g>
+
+  <!-- Stat 2 -->
+  <g transform="translate(295, 265)">
+    <rect width="210" height="130" rx="10" fill="url(#wgCard)" stroke="#059669" stroke-width="1"/>
+    <text x="20" y="45" fill="#34D399" font-family="system-ui, sans-serif" font-size="30" font-weight="800">120+</text>
+    <text x="20" y="72" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Species Tracked</text>
+    <text x="20" y="92" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11">Real-time rescue updates</text>
+    <rect x="20" y="105" width="80" height="14" rx="3" fill="#047857"/>
+    <text x="26" y="115" fill="#E6FFFA" font-family="system-ui, sans-serif" font-size="9">Conservation</text>
+  </g>
+
+  <!-- Stat 3 -->
+  <g transform="translate(525, 265)">
+    <rect width="210" height="130" rx="10" fill="url(#wgCard)" stroke="#059669" stroke-width="1"/>
+    <text x="20" y="45" fill="#34D399" font-family="system-ui, sans-serif" font-size="30" font-weight="800">100%</text>
+    <text x="20" y="72" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Open Initiative</text>
+    <text x="20" y="92" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11">Community driven awareness</text>
+    <rect x="20" y="105" width="80" height="14" rx="3" fill="#047857"/>
+    <text x="26" y="115" fill="#E6FFFA" font-family="system-ui, sans-serif" font-size="9">Community</text>
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hotelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="hotelGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="hotelCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#hotelBg)"/>
+
+  <!-- Browser Header Bar -->
+  <rect x="40" y="30" width="720" height="38" rx="8" fill="#1E293B"/>
+  <circle cx="65" cy="49" r="6" fill="#EF4444"/>
+  <circle cx="85" cy="49" r="6" fill="#F59E0B"/>
+  <circle cx="105" cy="49" r="6" fill="#10B981"/>
+  <rect x="135" y="40" width="370" height="18" rx="4" fill="#334155"/>
+  <text x="145" y="53" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">https://github.com/Codingguru1965/hotel-management-system</text>
+
+  <!-- App Main Content Area -->
+  <rect x="40" y="68" width="720" height="352" rx="4" fill="#0B1329"/>
+
+  <!-- Top App Navigation -->
+  <rect x="40" y="68" width="720" height="50" fill="#1E293B"/>
+  <rect x="65" y="80" width="26" height="26" rx="6" fill="url(#hotelGold)"/>
+  <text x="73" y="98" fill="#0F172A" font-family="system-ui, sans-serif" font-weight="900" font-size="15">G</text>
+  <text x="100" y="98" fill="#F8FAFC" font-family="system-ui, sans-serif" font-weight="700" font-size="15">GrandLuxe</text>
+  <text x="180" y="98" fill="#F59E0B" font-family="system-ui, sans-serif" font-weight="600" font-size="11">RESORT &amp; SUITES</text>
+
+  <rect x="520" y="79" width="105" height="28" rx="6" fill="#334155"/>
+  <text x="532" y="97" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11">🏨 Front Desk</text>
+  <rect x="635" y="79" width="105" height="28" rx="6" fill="url(#hotelGold)"/>
+  <text x="647" y="97" fill="#0F172A" font-family="system-ui, sans-serif" font-weight="700" font-size="11">Book A Suite</text>
+
+  <!-- Metrics Strip -->
+  <!-- Stat 1: Occupancy -->
+  <g transform="translate(65, 135)">
+    <rect width="155" height="65" rx="8" fill="url(#hotelCard)" stroke="#334155" stroke-width="1"/>
+    <text x="14" y="26" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">OCCUPANCY RATE</text>
+    <text x="14" y="52" fill="#F59E0B" font-family="system-ui, sans-serif" font-size="22" font-weight="800">87.5%</text>
+    <text x="95" y="50" fill="#10B981" font-family="system-ui, sans-serif" font-size="11">↑ 12%</text>
+  </g>
+
+  <!-- Stat 2: Active Stays -->
+  <g transform="translate(235, 135)">
+    <rect width="155" height="65" rx="8" fill="url(#hotelCard)" stroke="#334155" stroke-width="1"/>
+    <text x="14" y="26" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">ACTIVE GUESTS</text>
+    <text x="14" y="52" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="22" font-weight="800">142</text>
+    <text x="80" y="50" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">In-House</text>
+  </g>
+
+  <!-- Stat 3: Today's Arrivals -->
+  <g transform="translate(405, 135)">
+    <rect width="155" height="65" rx="8" fill="url(#hotelCard)" stroke="#334155" stroke-width="1"/>
+    <text x="14" y="26" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">TODAY'S ARRIVALS</text>
+    <text x="14" y="52" fill="#34D399" font-family="system-ui, sans-serif" font-size="22" font-weight="800">28</text>
+    <text x="65" y="50" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">Checked In</text>
+  </g>
+
+  <!-- Stat 4: Revenue -->
+  <g transform="translate(575, 135)">
+    <rect width="160" height="65" rx="8" fill="url(#hotelCard)" stroke="#334155" stroke-width="1"/>
+    <text x="14" y="26" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">REVENUE (MTD)</text>
+    <text x="14" y="52" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="20" font-weight="800">$48,250</text>
+  </g>
+
+  <!-- Operational Panels -->
+  <!-- Left Panel: Room Management & Operations -->
+  <g transform="translate(65, 215)">
+    <rect width="365" height="185" rx="8" fill="url(#hotelCard)" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Room Status Operations Grid</text>
+    <text x="240" y="28" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Floors 1-6</text>
+
+    <!-- Room row 1 -->
+    <rect x="16" y="44" width="75" height="40" rx="6" fill="#065F46"/>
+    <text x="26" y="62" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">#101</text>
+    <text x="26" y="76" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="9">AVAILABLE</text>
+
+    <rect x="100" y="44" width="75" height="40" rx="6" fill="#991B1B"/>
+    <text x="110" y="62" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">#102</text>
+    <text x="110" y="76" fill="#FECACA" font-family="system-ui, sans-serif" font-size="9">OCCUPIED</text>
+
+    <rect x="185" y="44" width="75" height="40" rx="6" fill="#854D0E"/>
+    <text x="195" y="62" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">#103</text>
+    <text x="195" y="76" fill="#FEF08A" font-family="system-ui, sans-serif" font-size="9">CLEANING</text>
+
+    <rect x="270" y="44" width="75" height="40" rx="6" fill="#991B1B"/>
+    <text x="280" y="62" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">#104</text>
+    <text x="280" y="76" fill="#FECACA" font-family="system-ui, sans-serif" font-size="9">OCCUPIED</text>
+
+    <!-- Room row 2 -->
+    <rect x="16" y="94" width="75" height="40" rx="6" fill="#065F46"/>
+    <text x="26" y="112" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">#201</text>
+    <text x="26" y="126" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="9">AVAILABLE</text>
+
+    <rect x="100" y="94" width="75" height="40" rx="6" fill="#065F46"/>
+    <text x="110" y="112" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">#202</text>
+    <text x="110" y="126" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="9">AVAILABLE</text>
+
+    <rect x="185" y="94" width="75" height="40" rx="6" fill="#991B1B"/>
+    <text x="195" y="112" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">#203</text>
+    <text x="195" y="126" fill="#FECACA" font-family="system-ui, sans-serif" font-size="9">OCCUPIED</text>
+
+    <rect x="270" y="94" width="75" height="40" rx="6" fill="#854D0E"/>
+    <text x="280" y="112" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">#204</text>
+    <text x="280" y="126" fill="#FEF08A" font-family="system-ui, sans-serif" font-size="9">CLEANING</text>
+
+    <!-- Operational action -->
+    <rect x="16" y="145" width="329" height="26" rx="5" fill="#334155"/>
+    <text x="85" y="162" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11">⚡ Atomic Collision &amp; Double-Booking Prevention</text>
+  </g>
+
+  <!-- Right Panel: Housekeeping Kanban & BI Analytics -->
+  <g transform="translate(445, 215)">
+    <rect width="290" height="185" rx="8" fill="url(#hotelCard)" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Staff Kanban &amp; RBAC Portal</text>
+
+    <rect x="16" y="44" width="258" height="36" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+    <circle cx="34" cy="62" r="8" fill="#F59E0B"/>
+    <text x="50" y="58" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Turnover Task: Suite #103</text>
+    <text x="50" y="71" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="9">Dispatched to Housekeeping Team</text>
+
+    <rect x="16" y="88" width="258" height="36" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+    <circle cx="34" cy="106" r="8" fill="#10B981"/>
+    <text x="50" y="102" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Tax Invoice Auto-Generation</text>
+    <text x="50" y="115" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="9">jsPDF &amp; html2canvas Integration</text>
+
+    <rect x="16" y="132" width="258" height="38" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+    <circle cx="34" cy="151" r="8" fill="#38BDF8"/>
+    <text x="50" y="146" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Recharts Business Analytics</text>
+    <text x="50" y="159" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="9">Monthly Trends, Velocity &amp; Distribution</text>
+  </g>
+</svg>

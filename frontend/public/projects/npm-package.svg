@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="npmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1E2E"/>
+      <stop offset="100%" stop-color="#11111B"/>
+    </linearGradient>
+    <linearGradient id="npmRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CB3837"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="npmCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#28283E"/>
+      <stop offset="100%" stop-color="#181825"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#npmBg)"/>
+
+  <!-- Browser Header Bar -->
+  <rect x="40" y="30" width="720" height="38" rx="8" fill="#181825"/>
+  <circle cx="65" cy="49" r="6" fill="#EF4444"/>
+  <circle cx="85" cy="49" r="6" fill="#F59E0B"/>
+  <circle cx="105" cy="49" r="6" fill="#10B981"/>
+  <rect x="135" y="40" width="410" height="18" rx="4" fill="#313244"/>
+  <text x="145" y="53" fill="#A6ADC8" font-family="system-ui, sans-serif" font-size="11">https://www.npmjs.com/package/coding-validation-hook-form</text>
+
+  <!-- App Main Content Area -->
+  <rect x="40" y="68" width="720" height="352" rx="4" fill="#11111B"/>
+
+  <!-- npm Header -->
+  <rect x="40" y="68" width="720" height="52" fill="#181825"/>
+  <rect x="65" y="79" width="42" height="30" rx="4" fill="url(#npmRed)"/>
+  <text x="73" y="100" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="900" font-size="16">npm</text>
+
+  <text x="125" y="100" fill="#CDD6F4" font-family="system-ui, sans-serif" font-weight="700" font-size="15">coding-validation-hook-form</text>
+  <rect x="365" y="85" width="55" height="18" rx="4" fill="#313244"/>
+  <text x="372" y="98" fill="#F38BA8" font-family="system-ui, sans-serif" font-size="10" font-weight="700">v1.1.2</text>
+  <rect x="428" y="85" width="60" height="18" rx="4" fill="#313244"/>
+  <text x="435" y="98" fill="#A6E3A1" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Public</text>
+
+  <rect x="615" y="79" width="125" height="30" rx="6" fill="url(#npmRed)"/>
+  <text x="635" y="99" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">View on npm</text>
+
+  <!-- Terminal Installation Box -->
+  <g transform="translate(65, 138)">
+    <rect width="670" height="50" rx="8" fill="#181825" stroke="#313244" stroke-width="1"/>
+    <text x="20" y="31" fill="#A6ADC8" font-family="monospace" font-size="14">$</text>
+    <text x="38" y="31" fill="#89B4FA" font-family="monospace" font-size="14">npm install</text>
+    <text x="140" y="31" fill="#F38BA8" font-family="monospace" font-size="14" font-weight="bold">coding-validation-hook-form</text>
+    <rect x="580" y="11" width="75" height="28" rx="5" fill="#313244"/>
+    <text x="597" y="29" fill="#CDD6F4" font-family="system-ui, sans-serif" font-size="11">📋 Copy</text>
+  </g>
+
+  <!-- Left: Feature Highlights -->
+  <g transform="translate(65, 205)">
+    <rect width="320" height="195" rx="8" fill="url(#npmCard)" stroke="#313244" stroke-width="1"/>
+    <text x="16" y="28" fill="#CDD6F4" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Library Features &amp; Capabilities</text>
+
+    <!-- Badges Row -->
+    <rect x="16" y="44" width="85" height="22" rx="4" fill="#313244"/>
+    <text x="24" y="59" fill="#F9E2AF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">43+ Validators</text>
+
+    <rect x="108" y="44" width="95" height="22" rx="4" fill="#313244"/>
+    <text x="115" y="59" fill="#89B4FA" font-family="system-ui, sans-serif" font-size="10" font-weight="600">React Hook Form</text>
+
+    <rect x="210" y="44" width="95" height="22" rx="4" fill="#313244"/>
+    <text x="220" y="59" fill="#A6E3A1" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Yup Schemas</text>
+
+    <!-- Checklist -->
+    <text x="16" y="92" fill="#A6E3A1" font-family="system-ui, sans-serif" font-size="12">✓</text>
+    <text x="32" y="92" fill="#CDD6F4" font-family="system-ui, sans-serif" font-size="11">Indian Mobile, PAN, GSTIN &amp; IFSC</text>
+
+    <text x="16" y="118" fill="#A6E3A1" font-family="system-ui, sans-serif" font-size="12">✓</text>
+    <text x="32" y="118" fill="#CDD6F4" font-family="system-ui, sans-serif" font-size="11">Strong Password, Email &amp; URL Sanitization</text>
+
+    <text x="16" y="144" fill="#A6E3A1" font-family="system-ui, sans-serif" font-size="12">✓</text>
+    <text x="32" y="144" fill="#CDD6F4" font-family="system-ui, sans-serif" font-size="11">Full TypeScript Definitions (.d.ts)</text>
+
+    <text x="16" y="170" fill="#A6E3A1" font-family="system-ui, sans-serif" font-size="12">✓</text>
+    <text x="32" y="170" fill="#CDD6F4" font-family="system-ui, sans-serif" font-size="11">Zero overhead, bundled with tsup &amp; tested</text>
+  </g>
+
+  <!-- Right: Code Snippet Preview -->
+  <g transform="translate(400, 205)">
+    <rect width="335" height="195" rx="8" fill="#181825" stroke="#313244" stroke-width="1"/>
+    <!-- Code header -->
+    <rect x="0" y="0" width="335" height="28" rx="8" fill="#11111B"/>
+    <text x="14" y="19" fill="#6C7086" font-family="system-ui, sans-serif" font-size="10">TypeScript / React Hook Form Example</text>
+
+    <!-- Code lines -->
+    <text x="14" y="52" fill="#CBA6F7" font-family="monospace" font-size="11">import</text>
+    <text x="62" y="52" fill="#CDD6F4" font-family="monospace" font-size="11">{</text>
+    <text x="76" y="52" fill="#F9E2AF" font-family="monospace" font-size="11">indianMobile</text>
+    <text x="162" y="52" fill="#CDD6F4" font-family="monospace" font-size="11">,</text>
+    <text x="174" y="52" fill="#F9E2AF" font-family="monospace" font-size="11">panCard</text>
+    <text x="228" y="52" fill="#CDD6F4" font-family="monospace" font-size="11">}</text>
+
+    <text x="14" y="74" fill="#CBA6F7" font-family="monospace" font-size="11">from</text>
+    <text x="48" y="74" fill="#A6E3A1" font-family="monospace" font-size="11">'coding-validation-hook-form'</text>
+    <text x="245" y="74" fill="#CDD6F4" font-family="monospace" font-size="11">;</text>
+
+    <text x="14" y="104" fill="#6C7086" font-family="monospace" font-size="10">// Plug directly into Yup schema or Hook Form</text>
+
+    <text x="14" y="126" fill="#CBA6F7" font-family="monospace" font-size="11">const</text>
+    <text x="54" y="126" fill="#89B4FA" font-family="monospace" font-size="11">schema</text>
+    <text x="100" y="126" fill="#CDD6F4" font-family="monospace" font-size="11">=</text>
+    <text x="114" y="126" fill="#F9E2AF" font-family="monospace" font-size="11">yup</text>
+    <text x="136" y="126" fill="#CDD6F4" font-family="monospace" font-size="11">.</text>
+    <text x="144" y="126" fill="#89B4FA" font-family="monospace" font-size="11">object</text>
+    <text x="185" y="126" fill="#CDD6F4" font-family="monospace" font-size="11">({</text>
+
+    <text x="24" y="148" fill="#CDD6F4" font-family="monospace" font-size="11">mobile:</text>
+    <text x="76" y="148" fill="#F9E2AF" font-family="monospace" font-size="11">indianMobile</text>
+    <text x="162" y="148" fill="#CDD6F4" font-family="monospace" font-size="11">(),</text>
+
+    <text x="24" y="170" fill="#CDD6F4" font-family="monospace" font-size="11">pan:</text>
+    <text x="54" y="170" fill="#F9E2AF" font-family="monospace" font-size="11">panCard</text>
+    <text x="108" y="170" fill="#CDD6F4" font-family="monospace" font-size="11">()</text>
+
+    <text x="14" y="190" fill="#CDD6F4" font-family="monospace" font-size="11">});</text>
+  </g>
+</svg>
